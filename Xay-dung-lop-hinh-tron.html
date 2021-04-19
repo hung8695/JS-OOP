@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let Circle=function (r){
+        this.r=r;
+
+    this.getR=function (){
+        return r;
+    }
+    this.getArea=function(){
+        return Math.PI*r*r;
+    }
+    }
+    let circle=new Circle(2);
+    let r=circle.getR();
+    let area=circle.getArea();
+    alert("radius: " + r + "; area: " + area);
+
+</script>
+</body>
+</html>
