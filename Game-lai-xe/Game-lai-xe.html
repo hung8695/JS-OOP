@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="canvas" width="800" height="600" style="border: 1px solid #d3d3d3 "></canvas>
+<script>
+
+    var ctx = document.getElementById('canvas').getContext('2d');
+    var img = new Image();
+    img.src = 'car.jpg';
+    img.onload = function () {
+        ctx.drawImage(img, 350, 300, 60, 60);
+    }
+</script>
+</body>
+</html>
